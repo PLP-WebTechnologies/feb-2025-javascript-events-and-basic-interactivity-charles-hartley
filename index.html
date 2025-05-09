@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamii Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jamii Empowerment Hub</h1>
+        <p>Connecting the Society with Resources, Events and Opportunities</p>
+    </header>
+
+    <div class="container">
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="about">About Us</button>
+                <button class="tab-btn" data-tab="resources">Resources</button>
+                <button class="tab-btn" data-tab="events">Events</button>
+                <button class="tab-btn" data-tab="contact">Contact</button>
+            </div>
+
+            <div id="about" class="tab-content active">
+                <h2>About the Jamii Empowerment Hub</h2>
+                <p>Jamii is a Swahili term meaning community, that's what we're building, a vibrant, supportive community dedicated to empowerment and growth</p>
+                <p>Our mission is to connect individuals with the resources, training and opportunities they need to thrive personnally and professionally.</p>
+
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <img src="ValDevPolicy-2.png" alt="Community Workshop" class="gallery-img active" data-caption="Community Workshop: Building skills together">
+                        <img src="charlottefuture2040-workshop.jpg" alt="Youth Program" class="gallery-img" data-caption="Youth Leadership Program: Empowering the next generation">
+                        <img src="network.webp" alt="Business Training" class="gallery-img" data-caption="Business Training: Supporting local entrepreneurs">
+                        <div class="gallery-caption">Community Workshop: Buildings skills together</div>
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn" id="prev-btn"><i class="fas fa-arrow-left"></i>Previous</button>
+                        <button class="gallery-btn" id="next-btn">Next <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <button class="color-button" id="theme-button">Change Theme Color</button>
+            </div>
+
+            <div id="resources" class="tab-content">
+                <h2>Community Resources</h2>
+                <p>Access a wide range of resources designed to help you reach your goals:</p>
+                <ul>
+                    <li>Free Training and Workshop</li>
+                    <li>Career Counseling and Job Placement</li>
+                    <li>Small Business Support</li>
+                    <li>Financial Literacy Programs</li>
+                    <li>Youth Mentorship</li>
+                </ul>
+
+                <div class="keystroke-container">
+                    <h3>Interactive Keyboard Test</h3>
+                    <p>Press any key to see it displayed below</p>
+                    <div class="keystroke-display" id="key-display">Press any key...</div>
+                </div>
+            </div>
+
+            <div id="events" class="tab-content">
+                <h2>Jamii Events & Gatherings</h2>
+                <p>Be part of Jamii's vibrant calendar of events and commmunity gatherings:</p>
+                <ul>
+                    <li>
+                        <strong>Jamii Community Festival</strong> - June 15, 2025
+                        <p>A celebration of our diverse Jamii with food, music and family-friendly activities.</p>
+                    </li>
+                    <li>
+                        <strong>Jamii Entrepreneurship Workshop</strong> - July 5, 2025
+                        <p>Master essential skills to start and grow your Jamii-supported business.</p>
+                    </li>
+                    <li>
+                        <strong>Jamii Youth Leadership Retreat</strong> - July 20-22, 2025
+                        <p>A powerful three-day experience for young leaders in our Jamii Community (ages 14-18).</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="contact" class="tab-content">
+                <h2>Join the Jamii Community</h2>
+                <p>Subscribe to stay connected with Jamii programs, updates and events.</p>
+
+                <div class="success-message" id="form-success">
+                    Thank you for joining Jamii! We'll be in touch soon.
+                </div>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" required />
+                        <div class="error-message" id="name-error">Please enter your full name</div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required />
+                        <div class="error-message" id="email-error">Please enter a valid email address</div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="password">Create Password *</label>
+                        <input type="password" id="password" required />
+                        <div class="error-message" id="password-error">Password must be at least 8 characters</div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest in Jamii</label>
+                        <textarea id="interests" rows="3"></textarea>
+                    </div>
+            
+                    <button type="submit" class="submit-btn">Join Jamii</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="easter-egg" id="easter-egg">
+        <h2>You Found a Jamii Secret!</h2>
+        <p>Thanks for exploring the Jamii Empowerment Hub! You’ve unlocked exclusive access to our masterclass series for Jamii members.</p>
+        <button id="close-easter-egg">Continue Exploring Jamii</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Jamii Empowerment Hub. All rights reserved.</p>
+        <p><small>Double-click anywhere on the page for a surprise Jamii moment!</small></p>
+    </footer>
+    
+      <script src="script.js"></script>
+</body>
+</html>
